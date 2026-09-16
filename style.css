@@ -3,7 +3,7 @@ html {
   background-color: #e8e6e1;
 }
 
-body {
+.corpo {
   background-color: #ffffff;
   max-width: 720px;
   margin: 0 auto;
@@ -322,3 +322,27 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+
+.cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 32px 0;
+}
+
+.cartoes.sem-definicao p {
+  display: none;
+}
+
+.termo {
+  flex: 1;
+  min-width: 200px;
+  padding: 2px 18px 14px 18px;
+  border-radius: 6px;
+  background-color: #f7f5f0;
+}
+
+.corpo.dark {background-color: #1b2733;}
+  body {background-color: #1b2733;}                                                                                                                                  
+  html {background-color: #000000;}
+  p, h1, h2, h3 {color: #e0dcd3;}
