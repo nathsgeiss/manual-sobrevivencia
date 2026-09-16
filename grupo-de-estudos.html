@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo de Estudos — Manual de Sobrevivência</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="barra">
+  <p class="marca">Manual de Sobrevivência</p>
+  <ul class="links">
+    <li><a href="index.html">Manual</a></li>
+    <li><a href="grupo-de-estudos.html">Grupo</a></li>
+    <li><a href="atalhos.html">Atalhos</a></li>
+    <li><a href="glossario.html">Glossário</a></li>
+  </ul>
+</header>
+
+  <h1>Grupo de Estudos</h1>
+
+  <p>
+    <em>Toda quarta-feira, uma hora, sem cobrança de presença.</em>
+  </p>
+
+  <p>
+    A ideia é simples: um tema por encontro, alguém apresenta o que estudou, e o
+    resto do tempo é para dúvida. Ninguém precisa ser especialista — quem explicou
+    um assunto pela primeira vez costuma ser quem mais aprende naquele dia.
+  </p>
+
+  <hr>
+
+  <h2>Próximos encontros</h2>
+
+  <table border="1">
+    <caption>Calendário do segundo semestre</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Data</th>
+        <th scope="col">Tema</th>
+        <th scope="col">Formato</th>
+        <th scope="col">Sala</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">27/08</th>
+        <td>Como o navegador lê uma página</td>
+        <td>Apresentação</td>
+        <td>Lab 2</td>
+      </tr>
+      <tr>
+        <th scope="row">03/09</th>
+        <td>Git além do commit</td>
+        <td>Mão na massa</td>
+        <td>Lab 2</td>
+      </tr>
+      <tr>
+        <th scope="row">10/09</th>
+        <td>Acessibilidade na prática</td>
+        <td>Apresentação</td>
+        <td>Auditório</td>
+      </tr>
+
+      <tr>
+        <td colspan="4">Recesso — semana de provas</td>
+      </tr>
+
+      <tr>
+        <th scope="row">24/09</th>
+        <td>Lendo código dos outros</td>
+        <td>Mão na massa</td>
+        <td>Lab 1</td>
+      </tr>
+      <tr>
+        <th scope="row">01/10</th>
+        <td>Montando um portfólio</td>
+        <td>Roda de conversa</td>
+        <td>Lab 1</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Encontros das 12h às 13h. Pode levar comida.</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>Inscrição</h2>
+
+  <p>
+    Preencha para entrar na lista de avisos. Dá para sair quando quiser, e ninguém
+    é cobrado por faltar.
+  </p>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Seus dados</legend>
+
+      <p>
+        <label for="nome">Nome completo</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Maria da Silva" required>
+      </p>
+
+      <p>
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" name="email" placeholder="maria@exemplo.com" required>
+      </p>
+
+      <p>
+        <label for="nascimento">Data de nascimento</label><br>
+        <input type="date" id="nascimento" name="nascimento">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Sua participação</legend>
+
+      <p>
+        <label for="nivel">Como você se descreveria hoje?</label><br>
+        <select id="nivel" name="nivel">
+          <option value="">Selecione uma opção</option>
+          <option value="nunca">Nunca programei</option>
+          <option value="comecando">Estou começando agora</option>
+          <option value="algum">Já fiz alguns projetos</option>
+          <option value="trabalho">Já trabalho na área</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="horas">Quantas horas por semana você consegue estudar?</label><br>
+        <input type="number" id="horas" name="horas" min="1" max="40" value="4">
+      </p>
+
+      <fieldset>
+        <legend>Você prefere participar</legend>
+        <p>
+          <input type="radio" id="presencial" name="modalidade" value="presencial" checked>
+          <label for="presencial">Presencialmente</label>
+        </p>
+        <p>
+          <input type="radio" id="online" name="modalidade" value="online">
+          <label for="online">Pela chamada de vídeo</label>
+        </p>
+        <p>
+          <input type="radio" id="tanto-faz" name="modalidade" value="tanto-faz">
+          <label for="tanto-faz">Tanto faz</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quais temas te interessam?</legend>
+        <p>
+          <input type="checkbox" id="tema-web" name="temas" value="web">
+          <label for="tema-web">Desenvolvimento web</label>
+        </p>
+        <p>
+          <input type="checkbox" id="tema-git" name="temas" value="git">
+          <label for="tema-git">Git e trabalho em equipe</label>
+        </p>
+        <p>
+          <input type="checkbox" id="tema-carreira" name="temas" value="carreira">
+          <label for="tema-carreira">Carreira e primeiro emprego</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <label for="apresentar">Sobre o que você toparia apresentar?</label><br>
+        <textarea id="apresentar" name="apresentar" rows="4" cols="40"
+                  placeholder="Pode ser algo que você ainda vai estudar."></textarea>
+      </p>
+
+      <p>
+        <input type="checkbox" id="avisos" name="avisos" value="sim" required>
+        <label for="avisos">Aceito receber os avisos dos encontros por e-mail</label>
+      </p>
+    </fieldset>
+
+    <p>
+      <button type="submit">Quero participar</button>
+      <button type="reset">Limpar</button>
+    </p>
+
+  </form>
+
+  <hr>
+
+  <p>
+    Dúvidas sobre o grupo? Fale com quem te passou este link.<br>
+    <a href="index.html">Voltar para o manual</a>
+  </p>
+
+</body>
+</html>
