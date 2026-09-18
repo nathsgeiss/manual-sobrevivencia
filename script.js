@@ -5,7 +5,8 @@ botao.addEventListener ('click',function () {
 });
 
 const tema = document.querySelector(".botao-tema");
-const corpo = document.querySelector(".dark");
-botao.addEventListener ('click',function () {
-    termos.classList.toggle('dark');
+const corpo = document.querySelector(".corpo");
+
+tema.addEventListener('click', function () {
+  corpo.classList.toggle('escuro');
 });

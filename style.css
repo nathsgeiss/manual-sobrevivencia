@@ -342,7 +342,19 @@ button:hover {
   background-color: #f7f5f0;
 }
 
-.corpo.dark {background-color: #1b2733;}
-  body {background-color: #1b2733;}                                                                                                                                  
-  html {background-color: #000000;}
-  p, h1, h2, h3 {color: #e0dcd3;}
+body.escuro {
+  background-color: #171d27;
+  color: #cdc9c0;
+}
+
+body.escuro .cartao,
+body.escuro .termo {
+  background-color: #222a36;
+  border-color: #333c4a;
+}
+
+body.escuro h1,
+body.escuro h2,
+body.escuro h3 {
+  color: #e8c07a;
+}
